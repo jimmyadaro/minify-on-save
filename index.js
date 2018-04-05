@@ -44,7 +44,7 @@ export default {
         atom.notifications.addSuccess(message, {detail: output, dismissable: true});
       }
       const error = stderr.trim() || (err && err.message);
-      if error) {
+      if (error) {
         atom.notifications.addError(message, {detail: error, dismissable: true});
       }
     });
