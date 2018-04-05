@@ -33,7 +33,7 @@ export default {
     const srcFile = savedFile;
     savedFile = relative(rootDir, savedFile);
     const extension = extname(savedFile);
-    if (extension !== 'js') return;
+    if (extension !== '.js' && extension !== '.JS') console.log(extension); return;
     const destFile = savedFile.substr(0, savedFile.length - extension.length);
 
     mkdirp.sync(join(rootDir, dirname(destFile)));
