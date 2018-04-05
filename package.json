@@ -1,0 +1,23 @@
+{
+  "name": "uglify-on-save",
+  "version": "1.0.0",
+  "description": "Uglify js file on save",
+  "keywords": [
+    "save",
+    "file",
+    "run",
+    "command",
+    "watch",
+    "watcher",
+    "trigger",
+    "hook",
+    "track",
+    "execute",
+    "shell"
+  ],
+  "repository": "https://github.com/aadityataparia/uglify-on-save",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
