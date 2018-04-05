@@ -22,11 +22,11 @@ export default {
 
   handleDidSave(event) {
     let savedFile = event.path;
-    const savedFileDir = dirname(savedFile);
+    const rootDir = dirname(savedFile);
     if (!rootDir) {
       return;
     }
-    this.run(file, dir);
+    this.run(savedFile, rootDir);
   },
 
   run(savedFile, rootDir) {
