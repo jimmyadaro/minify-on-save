@@ -29,12 +29,11 @@ export default {
   },
 
   run(savedFile, rootDir) {
-    const srcFile = savedFile;
     savedFile = relative(rootDir, savedFile);
     const extension = extname(savedFile);
     if (extension != '.js' && extension != '.JS') return;
     const destFile = savedFile.substr(0, savedFile.length - extension.length);
-    const command = `uglifyjs ${srcFile} -o ${destFile}.min.js --source-map "url='${destFile}.min.js.map'"`;
+    const command = `uglifyjs ${savedFile} -o ${destFile}.min.js --source-map "url='${destFile}.min.js.map'"`;
     const options = {cwd: rootDir, timeout: EXEC_TIMEOUT};
     console.log(command);
     exec(command, options, (err, stdout, stderr) => {
