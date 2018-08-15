@@ -1,14 +1,16 @@
 {
-  "name": "uglify-on-save",
-  "version": "0.8.0",
-  "description": "Uglify js file on save",
+  "name": "minify-on-save",
+  "version": "0.1.0",
+  "description": "Minify JavaScript files on save",
   "keywords": [
     "uglify",
+    "minify",
+    "min",
     "js",
     "save",
     "shell"
   ],
-  "repository": "https://github.com/aadityataparia/uglify-on-save",
+  "repository": "https://github.com/jimmyadaro/minify-on-save",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
